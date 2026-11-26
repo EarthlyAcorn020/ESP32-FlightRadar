@@ -1,0 +1,8 @@
+.DS_Store
+.env
+.env.*
+build/
+*.bin
+*.elf
+*.map
+*.log
