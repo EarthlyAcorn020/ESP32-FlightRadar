@@ -69,6 +69,18 @@ The top bar shows the clock, feed status, and the age of the last good flight up
 
 **From a phone:** tap **Phone Setup**, join the password-protected `FlightRadar-Setup` network using the code shown on the display, then open `http://192.168.4.1`. The form takes Wi-Fi settings, radar coordinates, radius, brightness, refresh interval, mode, and units. Saving closes setup and reconnects the ESP32. **Back** closes setup without applying changes. Settings persist across reboots.
 
+## Printable desk enclosure
+
+![AI concept render of FlightRadar in a charcoal desk enclosure with right-side USB-C](enclosure/v4/FlightRadar-Concept.png)
+
+*AI styling concept. The v4 CAD preview shows the geometry in the downloadable print files.*
+
+The v4 enclosure fits around the existing E32R35T-style display board. It uses a 93 mm front face, a slim wedge shell with a 21° viewing tilt, and a right-side USB-C opening. Start with the fit-check piece to verify board mounting and cable clearance on your hardware.
+
+- [Download the complete v4 print package](enclosure/v4/FlightRadar-Desk-v4-Print-Model.zip?raw=true)
+- [Fit-check STL](enclosure/v4/FlightRadar-fit-check.stl) · [Front bezel STL](enclosure/v4/FlightRadar-bezel.stl) · [Rear shell STL](enclosure/v4/FlightRadar-shell.stl)
+- [Print guide](enclosure/v4/PRINT-GUIDE.md) · [CAD preview](enclosure/v4/FlightRadar-CAD-preview.png) · [Editable OpenSCAD source](enclosure/v4/FlightRadar-Desk-v4.scad)
+
 ## Build one
 
 Use a classic 4 MB ESP32, a 320 × 480 ST7796 SPI display, XPT2046 resistive touch, and 2.4 GHz Wi-Fi. The display runs in landscape. Install the included TFT_eSPI configuration, then open `FlightRadar/FlightRadar.ino` in Arduino IDE and select the **Huge APP** partition before uploading.
